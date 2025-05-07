@@ -1,0 +1,53 @@
+@import './common/vars';
+
+.reviews {
+  background-color: $_black;
+}
+
+.reviews-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $_white;
+  padding-bottom: 32px;
+}
+
+.reviews-card {
+  border: 1px solid #4e5255;
+  padding: 24px 32px;
+  width: 265px;
+}
+
+.reviews-card-img {
+  width: 151px;
+  height: 27px;
+  padding-bottom: 16px;
+}
+
+.reviews-card-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  height: 232px;
+}
+
+.reviews-card-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $_gray-dark;
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-title {
+    padding-bottom: 60px;
+  }
+
+  .reviews-card-text {
+    width: 201px;
+  }
+}

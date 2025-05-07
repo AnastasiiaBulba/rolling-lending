@@ -1,0 +1,77 @@
+@import './common/vars';
+
+.faq-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $_white;
+  padding-bottom: 32px;
+}
+
+.faq-wrap-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-wrap-parag {
+  border-top: 1px solid #c3c7cb;
+  padding: 24px 0px;
+  width: 343px;
+  height: 152px;
+}
+
+.faq-parag-dop {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.faq-text-parag {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.faq-text-img {
+  width: 30px;
+  height: 30px;
+}
+
+.faq-text-content {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_gray;
+}
+
+@media screen and (min-width: 1440px) {
+  .faq-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .faq-title {
+    padding-bottom: 60px;
+  }
+
+  .faq-wrap-parag {
+    width: 791px;
+    height: 112px;
+  }
+
+  .faq-text-parag {
+    width: 600px;
+  }
+}

@@ -1,0 +1,89 @@
+@import './common/vars';
+
+.terms-body {
+  background-color: $_white;
+}
+
+.terms-section {
+  padding-top: 40px;
+}
+
+.terms-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  color: $_black;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+
+.terms-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_black;
+}
+
+.paragraph {
+  padding-bottom: 32px;
+}
+
+.terms-text-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $_black;
+  padding-bottom: 16px;
+}
+
+.terms-wrap-list {
+  padding-left: 26px;
+}
+
+.terms-list {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_black;
+  list-style-type: disc;
+}
+
+.terms-mail {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.terms-link-two {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1440px) {
+  .terms-section {
+    padding-top: 20px;
+  }
+
+  .nav-list-dop {
+    color: $_black;
+  }
+
+  .terms-title {
+    font-weight: 800;
+    font-size: 64px;
+  }
+
+  .terms-text-title {
+    font-weight: 700;
+    font-size: 40px;
+  }
+}

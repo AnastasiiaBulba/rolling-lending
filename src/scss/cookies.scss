@@ -1,0 +1,89 @@
+@import './common/vars';
+
+.cookies-body {
+  background-color: $_white;
+}
+
+.cookies-section {
+  padding-top: 40px;
+}
+
+.cookies-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  color: $_black;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+
+.cookies-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_black;
+}
+
+.paragraph {
+  padding-bottom: 32px;
+}
+
+.cookies-text-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $_black;
+  padding-bottom: 16px;
+}
+
+.cookies-wrap-list {
+  padding-left: 26px;
+}
+
+.cookies-list {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_black;
+  list-style-type: disc;
+}
+
+.cookies-mail {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cookies-link-two {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1440px) {
+  .cookies-section {
+    padding-top: 20px;
+  }
+
+  .nav-list-dop {
+    color: $_black;
+  }
+
+  .cookies-title {
+    font-weight: 800;
+    font-size: 64px;
+  }
+
+  .cookies-text-title {
+    font-weight: 700;
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,120 @@
+@import './common/vars';
+
+.is-hidden {
+  display: none;
+}
+
+.modal-cookies {
+  width: 375px;
+  height: 264px;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  background: $_white;
+  position: fixed;
+  bottom: 0;
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.modal-cookies-text-wrap {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.modal-cookies-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $_black;
+}
+
+.modal-cookies-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_black;
+  width: 343px;
+  text-align: left;
+}
+
+.modal-cookies-dop-btn {
+  display: flex;
+  gap: 8px;
+}
+
+.modal-cookies-accept,
+.modal-cookies-decline {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  all: unset;
+  cursor: pointer;
+
+  border: 1px solid $_black;
+  border-radius: 4px;
+  padding: 16px;
+  width: 167px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  background: $_black;
+  color: $_white;
+}
+
+.modal-cookies-accept:hover,
+.modal-cookies-decline:hover {
+  background: $_white;
+  color: $_black;
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-cookies {
+    width: 1440px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .modal-cookies-text-wrap {
+    gap: 16px;
+  }
+
+  .modal-cookies-text {
+    width: 810px;
+    text-align: left;
+  }
+
+  .modal-cookies-dop-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .modal-cookies-accept {
+    margin-top: 21px;
+    width: 187px;
+    height: 50px;
+    padding: 0;
+  }
+
+  .modal-cookies-decline {
+    margin-top: 21px;
+    width: 187px;
+    height: 50px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,129 @@
+@import './common/vars';
+
+.how {
+  background-color: $_black;
+}
+
+.how-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $_white;
+  padding-bottom: 32px;
+}
+
+.how-wrap-content-mob {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.how-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 343px;
+  height: 350px;
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.how-card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.how-card-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  text-align: center;
+}
+
+.dop1 {
+  background: $_purple;
+}
+
+.dop2 {
+  background: $_pink;
+}
+
+.dop3 {
+  background: $_violet;
+}
+
+.dop4 {
+  background: $_green;
+}
+
+.dop5 {
+  background: $_blue;
+}
+
+.how-wrap-content-desk {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .how-title {
+    padding-bottom: 60px;
+  }
+
+  .how-wrap-content-mob {
+    display: none;
+  }
+
+  .how-wrap-content-desk {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .how-card-wrap-one {
+    display: flex;
+    gap: 8px;
+  }
+
+  .how-card-desk-one {
+    padding: 32px 24px;
+    width: 448px;
+    height: 349px;
+  }
+
+  .how-card-desk-two {
+    padding: 32px 24px;
+    width: 676px;
+    height: 438px;
+  }
+
+  .how-card-title-desk {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 16px;
+  }
+
+  .how-card-text-desk {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.42;
+    text-align: center;
+    padding-top: 16px;
+  }
+
+  .how-card-wrap-two {
+    display: flex;
+    gap: 8px;
+  }
+}

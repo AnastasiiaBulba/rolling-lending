@@ -1,0 +1,89 @@
+@import './common/vars';
+
+.privacy-body {
+  background-color: $_white;
+}
+
+.privacy-section {
+  padding-top: 40px;
+}
+
+.privacy-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  color: $_black;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+
+.privacy-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_black;
+}
+
+.paragraph {
+  padding-bottom: 32px;
+}
+
+.privacy-text-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $_black;
+  padding-bottom: 16px;
+}
+
+.privacy-wrap-list {
+  padding-left: 26px;
+}
+
+.privacy-list {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_black;
+  list-style-type: disc;
+}
+
+.privacy-mail {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.privacy-link-two {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1440px) {
+  .privacy-section {
+    padding-top: 20px;
+  }
+
+  .nav-list-dop {
+    color: $_black;
+  }
+
+  .privacy-title {
+    font-weight: 800;
+    font-size: 64px;
+  }
+
+  .privacy-text-title {
+    font-weight: 700;
+    font-size: 40px;
+  }
+}

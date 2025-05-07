@@ -1,0 +1,56 @@
+@import './modal.scss';
+@import './modal-cookies.scss';
+@import './header.scss';
+@import './hero.scss';
+@import './about.scss';
+@import './game.scss';
+@import './how.scss';
+@import './game-a.scss';
+@import './reviews.scss';
+@import './faq.scss';
+@import './footer.scss';
+
+@import './common/reset';
+@import './common/mixins';
+@import './common/breakpoints';
+@import './common/vars';
+
+:root {
+  font-family: 'Inter', sans-serif;
+  color: $_white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: $_purple;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: visible;
+}
+
+.is-hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

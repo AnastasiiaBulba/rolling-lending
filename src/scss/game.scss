@@ -1,0 +1,85 @@
+@import './common/vars';
+
+.game {
+  background-color: $_black;
+}
+
+.game-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $_white;
+  padding-bottom: 32px;
+}
+
+.game-card {
+  border: 1px solid #4e5255;
+  padding: 32px 24px;
+  cursor: pointer;
+}
+
+.game-wrap-dop-num {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 39px;
+}
+
+.game-wrap-num {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.num1 {
+  color: $_purple;
+}
+
+.game-wrap-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: right;
+  color: $_white;
+  width: 160px;
+}
+
+.game-wrap-descrip {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.42;
+  color: $_gray-dark;
+  height: 78px;
+}
+
+.num2 {
+  color: $_pink;
+}
+
+.num3 {
+  color: $_green;
+}
+
+.num4 {
+  color: $_violet;
+}
+
+.num5 {
+  color: $_blue;
+}
+
+.num6 {
+  color: $_pink;
+}
+
+@media screen and (min-width: 1440px) {
+  .game-title {
+    padding-bottom: 60px;
+  }
+}
