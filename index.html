@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Rolling Sky Ball is a fast-paced 3D rhythm game where you roll, dodge, and bounce to the music. Test your reflexes and enjoy stunning visuals and soundtracks."
+    />
+    <meta
+      name="keywords"
+      content="Rolling Sky Ball, music game, rhythm game, reflex game, 3D ball runner, beat game, obstacle course game, speed challenge, musical reflex"
+    />
+    <meta name="author" content="fbxohikai.xyz" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://fbxohikai.xyz" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="500x500"
+      href="/assets/Icon500-124e1189.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,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"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    
+
+    <title>Rolling Sky Ball</title>
+    <script type="module" crossorigin src="/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/modal-76898e35.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-32edc112.js">
+    <link rel="stylesheet" href="/assets/modal-a5059942.css">
+    <link rel="stylesheet" href="/assets/vendor-7c8ef494.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+  <div class="header-wrapper">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About the Game</a>
+        </li>
+        <li class="nav-item">
+          <a href="#game" class="nav-link">Game Features</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#how" class="nav-link">How to Play</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#game-a" class="nav-link">Game Atmosphere</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#reviews" class="nav-link">Reviews</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#faq" class="nav-link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="header-burger" data-modal-open>
+      <img
+        width="24"
+        height="24"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABgSURBVHgB7daxDYAgEEDRwziIo7mZjuYmSGGNiYYQyHsNBVccCcWPAAD4LL0N5Jz3cmzRx5VSOmsDa+3yWf6IjsoOUXvEEoMb/gsB8IuUaE1KSAmAqUmJ1qSElAAAJnYDjxA07faMYJYAAAAASUVORK5CYII="
+        alt="Burger button"
+        class="header-burger-img"
+      />
+    </button>
+  </div>
+</header>
+
+      <div id="modal" class="backdrop is-hidden" data-backdrop>
+  <div class="modal">
+    <div class="modal-header">
+      <button type="button" class="back-button is-hidden" data-modal-close>
+        <img
+          width="24"
+          height="24"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVHgB7ZhRCoQwDAXDnrQ32d48i2AgdKNUm7QpvAF//IgzoK2UCAAAAACbwMzluCiI0PnncOFLzhwz1fxC3jQBrhGNfEzA+aDqHWHIV4rEM2K6vHrwcMQyeSXwOmK5vBJ5HJFGXgl1R6STF3oi0soLdxHp5QUrYht5wYjYR164iKgUwIdi4M57+TDeefPDTon1wXLAD2AId6tN+gjuWCrTRvCDdT5dBL/YpNJE8MAOuzxiRF7NWBPhIa9mzY3wlFcz50Tw/7FKJSeMiELeNAGVnGkiCkXAOx8tAgAAACCAHzTGoZIRzJ7yAAAAAElFTkSuQmCC"
+          alt="burger-button"
+          class="back-img"
+        />
+      </button>
+    </div>
+
+    <nav class="modal-nav is-hidden" data-modal>
+      <ul class="modal-nav-list">
+        <li class="modal-nav-item">
+          <a href="/" class="modal-nav-link">Home</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#about" class="modal-nav-link">About the Game</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#game" class="modal-nav-link">Game Features</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#how" class="modal-nav-link">How to Play</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#game-a" class="modal-nav-link">Game Atmosphere</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#reviews" class="modal-nav-link">Reviews</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="#faq" class="modal-nav-link">FAQ</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="./cookies.html" class="modal-nav-link">Cookies Policy</a>
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="./privacy-policy.html" class="modal-nav-link"
+            >Privacy Policy</a
+          >
+        </li>
+
+        <li class="modal-nav-item">
+          <a href="./terms.html" class="modal-nav-link">Terms and Conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+      <section class="hero">
+  <div class="hero-wrap-dop">
+    <div class="hero-wrap-content">
+      <h1 class="hero-wrap-title-desk">Rolling Sky Ball</h1>
+
+      <div class="hero-h1">
+        <h1 class="hero-wrap-title-one">Rolling</h1>
+        <h1 class="hero-wrap-title-two">Sky Ball</h1>
+      </div>
+
+      <p class="hero-wrap-text-one">Challenge Your Reflexes!</p>
+      <p class="hero-wrap-text-two">
+        Roll, dodge, and dance to the rhythm in this high-speed musical journey!
+      </p>
+    </div>
+
+    <a href="#" class="hero-btn">
+      <img class="hero-btn-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP+SURBVHgB7ZpLaFNZHMa/k3ub2NQ6UpSZDsXGAWc3UGfqbqCtOs7IbOoDBnEx6WIWM5vaARfiK1mIulIXrptufKBIBcVXK1moCJZaVHyAkCBirNYaaZvW5t57PCd4RWvqPee+EuT+ICSB/7nkl+/jPpILBAQEBAQEzAuBJKtObOqmQCd72c4eefa6X6d6cmRLfxZViJRg68mNh0DJtvJboomhv84kUWUIC/58fGM8REivxcayOqXJ4S1nUqgSQqKDirGo22qG1TXGv4RfTmzqbTneGUMVICxY9zTRQopLhGZZknGVKBlW6b2oMMIVXb1vkhrqGKa+3w9aMya6rOK1lRLkz3YkOWxxqhJ7W+GKfligLUHdsx0QratJpWorLVhaxCSjo90gRhTSUJJgx9IM3yvDB6Qr+jF65AkKvK6hAuzgR21tJWiivF2GKK+rnSThT20dJWjCk5xq2g2HH8STva2jBE14kgte/AMnmCcJW0+v6Z2+gBhcwhVBTnjiV8eSjUoB++tvxdUaNVMcVF2prWuCHCeSXO7oouul5xIUCW1AycxeVuJwgKuCnJLkq61Sa+pJ8VO591CQGAmRXm1QsV1b1wU54fw6RF5vEJotyX3zudzHUEps19YTQU5kvNNS0pRbob6BEDZq65kg50uS0nLvMWsrmqangpz5JHcuvC0t9wkszeIVtd1qzHNBzlzJXfW30RbJwTEElimq8Akuydm+bA/+ZGc+LtFiNeBLgibbrj/CmjvTcJHFVgO+Jbg504e23EVM55oQWqAj/NM4XCBtNeBLglxucyb14f3UuWbM3m2AU6hB+6xmPBecK2fiWJIiGV6np6zGPK3ofHImXBIRVtcfxQ8XBDQLHT3q73q/yLxnCVrJmRTON0MfrYUQLDVlQl8pKsfxRFBUjkNnFEwcW2ElmdaK2vKa37QE2YA8JHBdUEbOZD7JUh0pOmrWah2165GFDVwVtCNnYkrSfJglRPNmHVlqaTjAtZ1M2/NLtuVMuOTkqR9GauP3uuwmNhdXEuRy/94/ACewa76sTmhHw8l7HW7JcRwLOpaj7E9UQpMFI7qycWAoDZdxVNHWl9ccJkfTuqF2NV69mYVH2BZsnnyM/x4chB14HY2Q0eVFYnOxJcjl9g73IKpNSq0r1TFEj3w7eCsBn5AWtCvHjmn9mqH2eFnHckgJLp15Li3nZx3LISy4dCaX3zP8/2JhuQrUsRyK6ODZ6MM/GmbHYoLjqSmjbn3T1RsXUWGEE6wvjh9hh832L0+REZ0YPZWqYzmkbgQaXduaIJR8/ksWq6MRosnvBoYOo8qQvpUrt3pVXCH0b7Y0xt+zs5C+grbw8PJ0WuoyJiAgIOCr4B1QTNaUWqU21gAAAABJRU5ErkJggg==" alt="Google play" />
+      <div class="hero-btn-text">
+        <p class="hero-btn-text-one">Play now on</p>
+        <p class="hero-btn-text-two">Google Play</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+      <section id="about" class="about">
+  <div class="container">
+    <div class="about-wrap">
+      <h3 class="about-title">About the Game</h3>
+
+      <div class="about-wrap-text">
+        <div class="about-text-content-dop">
+          <p class="about-text-content">
+            Rolling Sky Ball is a thrilling 3D ball game that tests your speed,
+            timing, and musical reflexes! Guide your ball through a path full of
+            traps and obstacles as you bounce to the beat of exciting music.
+          </p>
+          <p class="about-text-content">
+            Swipe, dodge, and jump in perfect sync with the rhythm to stay on
+            track. Feel the rush of speed and the thrill of near misses in this
+            addictive and visually stunning game.
+          </p>
+        </div>
+
+        <div class="about-wrap-two">
+          <div class="about-wrap-parag">
+            <p class="about-text-parag">
+              Intense rhythmic gameplay synced to energetic music
+            </p>
+            <p class="about-text-number">01</p>
+          </div>
+          <div class="about-wrap-parag">
+            <p class="about-text-parag">
+              Fast-paced obstacle courses with increasing difficulty
+            </p>
+            <p class="about-text-number">02</p>
+          </div>
+          <div class="about-wrap-parag">
+            <p class="about-text-parag">
+              A true test of focus, coordination, and musical timing
+            </p>
+            <p class="about-text-number">03</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="game" class="game">
+  <div class="container">
+    <div class="game-wrap">
+      <h3 class="game-title">Game Features</h3>
+
+      <div class="game-wrap-content swiper gameSwiper">
+        <div class="swiper-wrapper">
+          <div class="game-card swiper-slide">
+            <div class="game-wrap-dop-num">
+              <p class="game-wrap-num num1">01</p>
+              <p class="game-wrap-text">Rhythm-Based Gameplay</p>
+            </div>
+
+            <p class="game-wrap-descrip">
+              Move to the music in a dance of reflexes.
+            </p>
+          </div>
+
+          <div class="game-card swiper-slide">
+            <div class="game-wrap-dop-num">
+              <p class="game-wrap-num num2">02</p>
+              <p class="game-wrap-text">Colorful Worlds</p>
+            </div>
+
+            <p class="game-wrap-descrip">
+              Travel through stunning environments with dynamic themes.
+            </p>
+          </div>
+
+          <div class="game-card swiper-slide">
+            <div class="game-wrap-dop-num">
+              <p class="game-wrap-num num3">03</p>
+              <p class="game-wrap-text">Challenging Obstacles</p>
+            </div>
+
+            <p class="game-wrap-descrip">
+              Avoid tricky traps that test your skill and focus.
+            </p>
+          </div>
+
+          <div class="game-card swiper-slide">
+            <div class="game-wrap-dop-num">
+              <p class="game-wrap-num num4">04</p>
+              <p class="game-wrap-text">Unlock New Balls</p>
+            </div>
+
+            <p class="game-wrap-descrip">
+              Choose from a variety of vibrant, rolling spheres.
+            </p>
+          </div>
+
+          <div class="game-card swiper-slide">
+            <div class="game-wrap-dop-num">
+              <p class="game-wrap-num num5">05</p>
+              <p class="game-wrap-text">Global Leaderboards</p>
+            </div>
+
+            <p class="game-wrap-descrip">Compete with players worldwide.</p>
+          </div>
+
+          <div class="game-card swiper-slide">
+            <div class="game-wrap-dop-num">
+              <p class="game-wrap-num num6">06</p>
+              <p class="game-wrap-text">Musical Variety</p>
+            </div>
+
+            <p class="game-wrap-descrip">
+              Piano, jungle, and more genres to groove with.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="how" class="how">
+  <div class="container">
+    <div class="how-wrap">
+      <h3 class="how-title">How to play</h3>
+
+      <div class="how-wrap-content-mob">
+        <div class="how-card dop1">
+          <p class="how-card-title">Follow the Rhythm</p>
+          <img
+            class="how-card-img"
+            src="/assets/how-slice1-mob-73ba8528.png"
+            alt="Image how to play"
+          />
+          <p class="how-card-text">Let the beat guide your moves.</p>
+        </div>
+
+        <div class="how-card dop2">
+          <p class="how-card-title">Swipe to Move</p>
+          <img
+            class="how-card-img"
+            src="/assets/how-slice2-mob-e3051d18.png"
+            alt="Image how to play"
+          />
+          <p class="how-card-text">
+            Control your ball by dragging left or right.
+          </p>
+        </div>
+
+        <div class="how-card dop3">
+          <p class="how-card-title">Hit Checkpoints</p>
+          <img
+            class="how-card-img"
+            src="/assets/how-slice3-mob-7d9d28c4.png"
+            alt="Image how to play"
+          />
+          <p class="how-card-text">Reach milestones and unlock levels.</p>
+        </div>
+
+        <div class="how-card dop4">
+          <p class="how-card-title">Hit Checkpoints</p>
+          <img
+            class="how-card-img"
+            src="/assets/how-slice4-mob-001d57be.png"
+            alt="Image how to play"
+          />
+          <p class="how-card-text">Reach milestones and unlock levels.</p>
+        </div>
+
+        <div class="how-card dop5">
+          <p class="how-card-title">Dodge Obstacles</p>
+          <img
+            class="how-card-img"
+            src="/assets/how-slice5-mob-da9551af.png"
+            alt="Image how to play"
+          />
+          <p class="how-card-text">Avoid traps and barriers in your path.</p>
+        </div>
+      </div>
+
+      <div class="how-wrap-content-desk">
+        <div class="how-card-wrap-one">
+          <div class="how-card-desk-one dop1">
+            <p class="how-card-title-desk">Follow the Rhythm</p>
+            <img
+              class="how-card-img-desk"
+              src="/assets/how-slice1-desk-9593f2f5.png"
+              alt="Image how to play"
+            />
+            <p class="how-card-text-desk">Let the beat guide your moves.</p>
+          </div>
+
+          <div class="how-card-desk-one dop2">
+            <p class="how-card-title-desk">Swipe to Move</p>
+            <img
+              class="how-card-img-desk"
+              src="/assets/how-slice2-desk-425b02e0.png"
+              alt="Image how to play"
+            />
+            <p class="how-card-text-desk">
+              Control your ball by dragging left or right.
+            </p>
+          </div>
+
+          <div class="how-card-desk-one dop3">
+            <p class="how-card-title-desk">Hit Checkpoints</p>
+            <img
+              class="how-card-img-desk"
+              src="/assets/how-slice3-desk-d13e540b.png"
+              alt="Image how to play"
+            />
+            <p class="how-card-text-desk">
+              Reach milestones and unlock levels.
+            </p>
+          </div>
+        </div>
+
+        <div class="how-card-wrap-two">
+          <div class="how-card-desk-two dop4">
+            <p class="how-card-title-desk">Hit Checkpoints</p>
+            <img
+              class="how-card-img-desk"
+              src="/assets/how-slice4-desk-f0815c4a.png"
+              alt="Image how to play"
+            />
+            <p class="how-card-text-desk">
+              Reach milestones and unlock levels.
+            </p>
+          </div>
+
+          <div class="how-card-desk-two dop5">
+            <p class="how-card-title-desk">Dodge Obstacles</p>
+            <img
+              class="how-card-img-desk"
+              src="/assets/how-slice5-desk-fcda53cd.png"
+              alt="Image how to play"
+            />
+            <p class="how-card-text-desk">
+              Avoid traps and barriers in your path.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="game-a" class="howgame-a">
+  <div class="container">
+    <div class="howgame-a-wrap">
+      <h3 class="howgame-a-title">Game atmosphere</h3>
+
+      <div class="howgame-a-text-mob">
+        <p class="howgame-a-text">
+          Experience an exhilarating mix of color, music, and momentum. Rolling
+          Sky Ball brings vibrant visuals and a pulse-pounding soundtrack
+          together in perfect harmony. Each level introduces a new sonic and
+          visual theme, from dreamy landscapes to cosmic tracks. Whether you’re
+          casually vibing or going for a perfect run, the energy never stops.
+        </p>
+      </div>
+
+      <div class="howgame-a-text-desk">
+        <p class="howgame-a-text">
+          Experience an exhilarating mix of color, music, and momentum.
+        </p>
+        <p class="howgame-a-text">
+          Rolling Sky Ball brings vibrant visuals and a pulse-pounding
+          soundtrack together in perfect harmony.
+        </p>
+        <p class="howgame-a-text">
+          Each level introduces a new sonic and visual theme, from dreamy
+          landscapes to cosmic tracks.
+        </p>
+        <p class="howgame-a-text">
+          Whether you’re casually vibing or going for a perfect run, the energy
+          never stops.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="reviews" class="reviews">
+  <div class="container">
+    <div class="reviews-wrap">
+      <h3 class="reviews-title">Reviews</h3>
+
+      <div class="reviews-wrap-content swiper reviewsSwiper">
+        <div class="swiper-wrapper">
+          <div class="reviews-card swiper-slide">
+            <img
+              class="reviews-card-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS4AAAA2CAYAAAB5snQBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAURSURBVHgB7d1fbhtFAMfx36xjicflBF2/lbYSyQna3gBOQHiFlpgTtDkBSVpVfaO9QW+QHsFITRSJB8wJ8ANIxcQ7zCQ2TfC/nfHOX/8+kqUosr3+2tLseP8ZICIiIqJMPLkrH+kbtgy7twu7/SjgwcF9+VPRwam+6b+xJdjN7m0QolvAsf5dWdUd/Hbzf+MJeq8vxBAZY/cn7M5XqG7nMy7ZwbP//6+74H+5Yfcn7M5XqG6nM65Fo/FM0cXnRwMxQobYPY/d+QnZ7XTGJVeMvPUYfWSK3fPYnZ+Q3c5mXKtG46mRGpV7ua2N2L0UuzMSutvZjEuu/55b5rg2YvdS7M5I6G4nMy49GquwUwlUa+6a1dqI3exegt0tczLjqnfwTYMoLau1EbvXYncGYuh2MnAJif3md8ZBf1eWyAC7m9yZ3amLobv1gevpPbnfcDSeyWJtxO7G2J2wWLpbH7gKYXHwWQZrI3YbYHeyYuludeD64YE8MByNZ8rJ3wbTz8iw2xi7ExRTt/VexX4ly3EXVaeLXfUspbo9VN99v8IGpMQ79YJ+qSUGkBjtfMTgaBjXnhh2s5vddtrsXjpw6Rf+8TOUOwK7okClpmZ31AIrIdSIq28Sfqa8AiO1rKGKHqpp6rAGfpcTDOoJRq9+FQO0jN3sZnf83XMDl54OqifSG9MqpEGP3u9OzsUhNsBudkeO3TfcGrgaHMYfrWKMvSPLNRO708Nuczl139o4Py48TQ8duOzYv3Z2p4fd5nLqvjVwvTq/GtHeIj1vX16I97DE7uSw20JO3XOHQ5yciX31BfIYqZA4vnrNG2J3Iti9kVy6Fx7HdfJB9FXcRhsBvZA4VBvt+mgJuyPH7lbk0L3yOC61B+K5erD5kbI+XEc9hwPsjhC7W5dy99oDUKOMc/hhzrA7Iux2JtXuRkfORxXn4cOcYXcE2O1cit2NT/l5el/21Z2D/laclPj2xbl4A4/YHQ67/Umt2+hcRX1JCyHwMwII8WHOsNs/dvuXUrfR1SH0E9cFvlZ/+jshVGAU8sPU2M1u59j9xuxhFp48kI8KiVN4cCmxNz1wLjh2u8fu8FLotroe18sPV0exOn+TJfA+lg9TY7db7I5DCt1OfxB2UyKdM9hbxe7twm6rx5rTl2Gt/8Ef8CCmnzBnt3vsDi+FbqsZ1+UlduHLX/GsjdjtAbuDS6HbauAS0l/YpOvxTVyD3e6xO7wUum0HrgqeqO+yMX2gFTxhd3js9rAseBy4pMCX8EQIPEQk2O0eu8NLodtuxuVx7SAj2uPCbvfYHV4K3cYD13f3pI4q4U/5/RfyDgJjtzfsDiiVbuOBq+hYjJDXP0Gkr7qoLxtrvutT4DECY7cBdrPbZJkW3eYD18RwGqmCij/R01cy1JdgVY/fg+F1r2PYcMnuhtjNbg/dxgOXWkijDXf6cP7x5Dro5q/VHl2I4TSwh+aBFQJj92rsZrfmq9t847xYPTrqoFpN/V6cicevVcSy+90M1I/B6mV628ux4jWwewF2s3sR193C5M6rTgVQTzSYCPw4PUHTmL4WkPqu+2zZXoaQp0Swex672W2i7e7NT7KeXk/n+Ezs2UZp+no86jl6+rnUmzRE7NjNbgvsbqfbaOC6GhFnP2uk9ySov/WGuTYvfjYL1M/9X6DEYcgTUNkNdrO7FUG7+5Us9Q0e+FpOE+z2syxEgt1+lgUiIiIiIiIiIiIiIiIiotb9C5IrMlczxj7AAAAAAElFTkSuQmCC"
+              alt="Image stars"
+            />
+            <p class="reviews-card-text">
+              Fast, fun, and surprisingly challenging. I can’t stop playing!
+            </p>
+            <p class="reviews-card-name">Liam Walker</p>
+          </div>
+
+          <div class="reviews-card swiper-slide">
+            <img
+              class="reviews-card-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS8AAAA2CAYAAACWcB8/AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAjuSURBVHgB7Z1bUhtHFIZPj4Qr5bzIK7D8hsEpxAqAFRhWALylEi7yCgwrsLhUKm/ACiArAK8AUTHYVXmwWEFIVexyAE3nnNGMPcgSmhmpey78X5VKSIyY+XvE36dP34gAAAAAAIAdFFlkZVzP8hkru+/VET0goBu6i84vE7pWUvSGDaVCmo62L9QmGcaaea1O6CWlaM9/2dw+V9P0AIBuD+guMPVxXdUlOm4rWnZduiqzfu3Swc571SCDOGQJR9Hr0MvaynM9Tw8A6PaA7gLjlmnRJTrZfadOfrtQTVfRK+XcKQcjWDEvqY00UTX8Hotbp4ID3d+A7mJSr+mK0rR006avzUQxMS6HppQHGcSKeXXVRh7cXp31cgMFBrq/Ad3FpH1N8xJ1/f5BtcLva0WbSpmNvoybV6/aKECVzIeWaQHd3wPdxUMMOxx1BfjRV8ukcRs3L+ce9y1yrQTd3wPdxUIMu1fUFeBFXwaN26h53VcbBRSxVoLu/kB3cRDD1m066Pd7ib7k2ZRxGzUvJ0Kbt4i1EnT3B7qLgR91tXY/dAyqH9qhLVPGbcy8Vn7S84Nqo4Ai1UrQPRjozj9+1DVwIOrun+qITaZqwriNmZdyo3cRF6lWgu4Ix0J3rvGbyTQo6gpwtZnclxHzWnmhZ+VGxfkMi1uknAPd0YHu/OJFXXpw1BWwc6H2lQzYHbFxGzEvpeO7LItb+nlcVynHQHeMz0B3LhHDlqhLDCnO51j4yHNfIzcvmaAZtzYKGMtxTgC64wPd+aJe1ZWSpr04UVeAU6aGRF+rz3WdRsRQE7NFzPUYVfnCqsrhZ6KnWtESaapQQtjVT7hGe8vt5Ca/uLrlHo1+40jSArqhu4i6ReeXH6hSVlQLdPL1VRW/llUyvOtm49o5TzbhWgy/3Jm0XuNHSwaxyjOXw2VQDuUv1Gy01FWUvzfQvCTE9cTwxXNbd4q7RyvioPzJ6jA3LwFNFnvFBdrka7jULrXcW2o9uqFWVLFxgG7oLqpuMan2Y5pnfVU24aeqYyYVz6DYQPi9JndEXPJzSzt8/jaf//Noy12MzHFI5kXW+FHh80xJOXtGKWg+Nz/4XrSkHG7adNRt7j3Na21SS1JxgyJ2AaeOoisugP2tc/WKhgC6oTvTjEB3sHyNRDr8z38m0U9bjNKlq6xEvF6k+5gjvxJHfS4/OtHfS77GrfAyOz3Na31Sf9R5uaEhWNzCMAvAQXe+gO74rE56OacpbvotU46QjgKH823b5+pZ8F7PhL0mq2HyyFBquOuG7nwB3Qk+q71I5h/KGeVbLz92R3fv3kbu1qScwSFks/SZhlt2F7pzA3Qnw3FJml0v87RIojQjual7yLXNnfvV07y236kNLqXY3aFpITdUfaK5YROK0J0PoDu57gbntbhnc4GT5Xt+zi/TeDm6H+mUk/d/bF/w/Qpxb2+jtI/5gDeUYUb1RQ4D3dkFukfU4+gn7rnpvMF5pAPKIF+vUdNBt3EJA4dKdG0okDUOuOCXyADQnUmge4SEzGHfxm4/cRhkXMJA8xIyemONfZEDoDtTQLcBsmhgUYxLiGRegj869piy0EPDiTsWVScLQDd0p4Yl3VkyMCn/MUWHshLFoPmTkec2ypZGt5rm+MeRj26OBYuy9UUWoBu6U8GibkniqzbNcdS5tDahU5t36VUcjjeAdjPKxO9YE7PlxjptmladOUn26dzQDbIMdEO3VVLQ7RnYGE1zW2w+DQPzI95Dl3tCo65YEbnZGCbUU1ElW6T0RQ4D3dBtnJR1yz6M7o2nuWlrFH4wTYsj3gWpOKJ+LpF5CXJj3RKdko3cQAa+yAHQDd3GyJBuNpR9mRxt+nr88j2Oa1xC4vW8JMxkcVbGh2TlhgrQbR7oTh9njOoc2hjf7dt1vKWFDuIalzDUYoQctj0lC0goSxkCus0C3elzfU1VGzk/rbyOkUS6hzIvrSzlAj5ZzDlEALoNA92pI8vRaE2XZBhZL4zLd4oSMOwy0DWyQLucbLldg0C3QaA7fbi3VTTHbsrFpVyiE5WwfBObl3Rtki0SOrMJoNsC0J06HA3NeEszG6bR7MzV/PW5jt00T2xeJUu1keAoe+caBHSbB7rTRzaK9dfQMo7SXvQ1TTFJbF7K4k3N0mqX0G0e6E4X6TiQhRobf8XvAUwCn+tSJdCe2Ly03RC3kiSsNAF0WwG6U+T2lmraQr4rwDtXgnLOReQlcEg9RxkAuu0A3enh7+hzRpYoudxsVPE7KxKZl5/EjD02g7tej2SmfJLxI7a/RL2A7nhAdz51O5pm4kZeay/0Oj/+XpvUenVS78XZFbzR2bWoEnecW5kSIGNAyI1+vGywedOm5dDWSnUWusHuvhijnR/1OGNAdzSgO9+6ZVxb6Tqaea2M69lSifZc7Y3XWii3qeWWaelRiU7XJ/X+f23airilWssf5xbZNBNFXv4YkIHIzXQ5DN45V3PdAmT9cFmGg3+MNvUiA93I0H0/0F0M3UxtULJeTIsjrGNVotdtRcuiffedOpEoSjTLqhxcLk/YxI4jrVLh0lnccW6JJmavT+hDdtn5ew5p8c1cFjEUAX9y5gb/uHjfcc4YPQnGhaQBdPcFuiOQB93+YoB7W+dqut/vS4reeLttR1h3K6R55r7jvX0ENFXjrGGWKPLqO11C0RW77SvZGDLqDRU8tz5XS+zWz6QW63fc7Zd08wHQ3QV0F053v2lBsv0YNwP3ZLFATq6/Fe1R1t0KaZ7jclvknNhHWW67+zgu6yb/3RmKQSLzUt1JTJlcqWjT+ZeecfjYoISIUAk/XYcWeiY7VbpL80L31zegu6C6uYkrY7x08FpMS5p9rmw/puhStHtbxsUk0CzRF/eovpYmZ5ykfs9rpQTc2aiAe1Wcz7Qxyq2owucRoZLslJpKxFOKQDdBd8F1ewNUb+iU+ylOuBnX4vCmzvmog1FrDzS7nQj0jKOo9ajLP48EcWWygK3zRAW6i3GeqDw03ZKn4mirIY9ho6NBiInJ0IqVF3qWAAAAAAAAAAAAAAAAAAAAAADACv8D2uKUQ5Du32UAAAAASUVORK5CYII="
+              alt="Image stars"
+            />
+            <p class="reviews-card-text">
+              The music is amazing and the gameplay keeps my reflexes sharp!
+            </p>
+            <p class="reviews-card-name">Ava Nguyen</p>
+          </div>
+
+          <div class="reviews-card swiper-slide">
+            <img
+              class="reviews-card-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS4AAAA2CAYAAAB5snQBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAURSURBVHgB7d1fbhtFAMfx36xjicflBF2/lbYSyQna3gBOQHiFlpgTtDkBSVpVfaO9QW+QHsFITRSJB8wJ8ANIxcQ7zCQ2TfC/nfHOX/8+kqUosr3+2tLseP8ZICIiIqJMPLkrH+kbtgy7twu7/SjgwcF9+VPRwam+6b+xJdjN7m0QolvAsf5dWdUd/Hbzf+MJeq8vxBAZY/cn7M5XqG7nMy7ZwbP//6+74H+5Yfcn7M5XqG6nM65Fo/FM0cXnRwMxQobYPY/d+QnZ7XTGJVeMvPUYfWSK3fPYnZ+Q3c5mXKtG46mRGpV7ua2N2L0UuzMSutvZjEuu/55b5rg2YvdS7M5I6G4nMy49GquwUwlUa+6a1dqI3exegt0tczLjqnfwTYMoLau1EbvXYncGYuh2MnAJif3md8ZBf1eWyAC7m9yZ3amLobv1gevpPbnfcDSeyWJtxO7G2J2wWLpbH7gKYXHwWQZrI3YbYHeyYuludeD64YE8MByNZ8rJ3wbTz8iw2xi7ExRTt/VexX4ly3EXVaeLXfUspbo9VN99v8IGpMQ79YJ+qSUGkBjtfMTgaBjXnhh2s5vddtrsXjpw6Rf+8TOUOwK7okClpmZ31AIrIdSIq28Sfqa8AiO1rKGKHqpp6rAGfpcTDOoJRq9+FQO0jN3sZnf83XMDl54OqifSG9MqpEGP3u9OzsUhNsBudkeO3TfcGrgaHMYfrWKMvSPLNRO708Nuczl139o4Py48TQ8duOzYv3Z2p4fd5nLqvjVwvTq/GtHeIj1vX16I97DE7uSw20JO3XOHQ5yciX31BfIYqZA4vnrNG2J3Iti9kVy6Fx7HdfJB9FXcRhsBvZA4VBvt+mgJuyPH7lbk0L3yOC61B+K5erD5kbI+XEc9hwPsjhC7W5dy99oDUKOMc/hhzrA7Iux2JtXuRkfORxXn4cOcYXcE2O1cit2NT/l5el/21Z2D/laclPj2xbl4A4/YHQ67/Umt2+hcRX1JCyHwMwII8WHOsNs/dvuXUrfR1SH0E9cFvlZ/+jshVGAU8sPU2M1u59j9xuxhFp48kI8KiVN4cCmxNz1wLjh2u8fu8FLotroe18sPV0exOn+TJfA+lg9TY7db7I5DCt1OfxB2UyKdM9hbxe7twm6rx5rTl2Gt/8Ef8CCmnzBnt3vsDi+FbqsZ1+UlduHLX/GsjdjtAbuDS6HbauAS0l/YpOvxTVyD3e6xO7wUum0HrgqeqO+yMX2gFTxhd3js9rAseBy4pMCX8EQIPEQk2O0eu8NLodtuxuVx7SAj2uPCbvfYHV4K3cYD13f3pI4q4U/5/RfyDgJjtzfsDiiVbuOBq+hYjJDXP0Gkr7qoLxtrvutT4DECY7cBdrPbZJkW3eYD18RwGqmCij/R01cy1JdgVY/fg+F1r2PYcMnuhtjNbg/dxgOXWkijDXf6cP7x5Dro5q/VHl2I4TSwh+aBFQJj92rsZrfmq9t847xYPTrqoFpN/V6cicevVcSy+90M1I/B6mV628ux4jWwewF2s3sR193C5M6rTgVQTzSYCPw4PUHTmL4WkPqu+2zZXoaQp0Swex672W2i7e7NT7KeXk/n+Ezs2UZp+no86jl6+rnUmzRE7NjNbgvsbqfbaOC6GhFnP2uk9ySov/WGuTYvfjYL1M/9X6DEYcgTUNkNdrO7FUG7+5Us9Q0e+FpOE+z2syxEgt1+lgUiIiIiIiIiIiIiIiIiotb9C5IrMlczxj7AAAAAAElFTkSuQmCC"
+              alt="Image stars"
+            />
+            <p class="reviews-card-text">
+              Great stress reliever and time killer. The visuals are beautiful!
+            </p>
+            <p class="reviews-card-name">Oliver Martinez</p>
+          </div>
+
+          <div class="reviews-card swiper-slide">
+            <img
+              class="reviews-card-img"
+              src="data:image/png;base64,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"
+              alt="Image stars"
+            />
+            <p class="reviews-card-text">
+              I love unlocking new balls and levels. Addictive in the best way.
+            </p>
+            <p class="reviews-card-name">Sophia Evans</p>
+          </div>
+
+          <div class="reviews-card swiper-slide">
+            <img
+              class="reviews-card-img"
+              src="data:image/png;base64,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"
+              alt="Image stars"
+            />
+            <p class="reviews-card-text">
+              If you like rhythm games with a challenge, this is for you.
+            </p>
+            <p class="reviews-card-name">Noah Brooks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section id="faq" class="faq">
+  <div class="container">
+    <div class="faq-wrap">
+      <h3 class="faq-title">FAQ</h3>
+
+      <div class="faq-wrap-two">
+        <div class="faq-wrap-parag">
+          <div class="faq-parag-dop">
+            <p class="faq-text-parag">Is the game free to play?</p>
+            <img
+              class="faq-text-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABhSURBVHgB7c9BDcMwEATAdRG0DMqsGAqhSBsGCQPHhpCTIn9mpNU9bzcBAAAAAACAG/XePyN7X+c/O6SgpWA+HOedtY7W2isXPVLzzHpHCqqDvyNb1pljfwEAAAAAAIAbnSqtjtChh3XgAAAAAElFTkSuQmCC"
+              alt="Image faq"
+            />
+          </div>
+
+          <p class="faq-text-content">
+            Yes, Rolling Sky Ball is free with optional in-app purchases.
+          </p>
+        </div>
+
+        <div class="faq-wrap-parag">
+          <div class="faq-parag-dop">
+            <p class="faq-text-parag">Is it available offline?</p>
+            <img
+              class="faq-text-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABhSURBVHgB7c9BDcMwEATAdRG0DMqsGAqhSBsGCQPHhpCTIn9mpNU9bzcBAAAAAACAG/XePyN7X+c/O6SgpWA+HOedtY7W2isXPVLzzHpHCqqDvyNb1pljfwEAAAAAAIAbnSqtjtChh3XgAAAAAElFTkSuQmCC"
+              alt="Image faq"
+            />
+          </div>
+
+          <p class="faq-text-content">
+            Yes, you can play offline, though some features require an internet
+            connection.
+          </p>
+        </div>
+
+        <div class="faq-wrap-parag">
+          <div class="faq-parag-dop">
+            <p class="faq-text-parag">What devices are supported?</p>
+            <img
+              class="faq-text-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABhSURBVHgB7c9BDcMwEATAdRG0DMqsGAqhSBsGCQPHhpCTIn9mpNU9bzcBAAAAAACAG/XePyN7X+c/O6SgpWA+HOedtY7W2isXPVLzzHpHCqqDvyNb1pljfwEAAAAAAIAbnSqtjtChh3XgAAAAAElFTkSuQmCC"
+              alt="Image faq"
+            />
+          </div>
+
+          <p class="faq-text-content">
+            Available on Android devices via Google Play.
+          </p>
+        </div>
+
+        <div class="faq-wrap-parag">
+          <div class="faq-parag-dop">
+            <p class="faq-text-parag">Is the music original?</p>
+            <img
+              class="faq-text-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABhSURBVHgB7c9BDcMwEATAdRG0DMqsGAqhSBsGCQPHhpCTIn9mpNU9bzcBAAAAAACAG/XePyN7X+c/O6SgpWA+HOedtY7W2isXPVLzzHpHCqqDvyNb1pljfwEAAAAAAIAbnSqtjtChh3XgAAAAAElFTkSuQmCC"
+              alt="Image faq"
+            />
+          </div>
+
+          <p class="faq-text-content">
+            Yes, the game features a curated mix of original and themed tracks.
+          </p>
+        </div>
+
+        <div class="faq-wrap-parag">
+          <div class="faq-parag-dop">
+            <p class="faq-text-parag">Can I customize my ball?</p>
+            <img
+              class="faq-text-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABhSURBVHgB7c9BDcMwEATAdRG0DMqsGAqhSBsGCQPHhpCTIn9mpNU9bzcBAAAAAACAG/XePyN7X+c/O6SgpWA+HOedtY7W2isXPVLzzHpHCqqDvyNb1pljfwEAAAAAAIAbnSqtjtChh3XgAAAAAElFTkSuQmCC"
+              alt="Image faq"
+            />
+          </div>
+
+          <p class="faq-text-content">
+            Unlock a variety of colorful balls as you progress.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <div id="modal-cookies" class="backdrop is-hidden" data-backdrop>
+  <div class="modal-cookies">
+    <div class="modal-cookies-text-wrap">
+      <p class="modal-cookies-title">Cookies</p>
+      <p class="modal-cookies-text">
+        We use cookies to improve your experience on our website. By browsing
+        this website, you agree to our use of cookies.
+      </p>
+    </div>
+    <div class="modal-cookies-dop-btn">
+      <button type="button" class="modal-cookies-accept">Accept Cookies</button>
+      <button type="button" class="modal-cookies-decline">
+        Decline cookies
+      </button>
+    </div>
+  </div>
+</div>
+
+      <footer class="footer">
+  <div class="footer-wrap">
+    <div class="footer-wrap-content">
+      <h4 class="footer-wrap-content-title">
+        Time Your Moves, Follow the Beat!
+      </h4>
+      <p class="footer-wrap-content-text">
+        Join the Rhythm Rush in Rolling Sky Ball Now!
+      </p>
+      <a href="#" class="footer-btn">
+        <img class="footer-btn-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP+SURBVHgB7ZpLaFNZHMa/k3ub2NQ6UpSZDsXGAWc3UGfqbqCtOs7IbOoDBnEx6WIWM5vaARfiK1mIulIXrptufKBIBcVXK1moCJZaVHyAkCBirNYaaZvW5t57PCd4RWvqPee+EuT+ICSB/7nkl+/jPpILBAQEBAQEzAuBJKtObOqmQCd72c4eefa6X6d6cmRLfxZViJRg68mNh0DJtvJboomhv84kUWUIC/58fGM8REivxcayOqXJ4S1nUqgSQqKDirGo22qG1TXGv4RfTmzqbTneGUMVICxY9zTRQopLhGZZknGVKBlW6b2oMMIVXb1vkhrqGKa+3w9aMya6rOK1lRLkz3YkOWxxqhJ7W+GKfligLUHdsx0QratJpWorLVhaxCSjo90gRhTSUJJgx9IM3yvDB6Qr+jF65AkKvK6hAuzgR21tJWiivF2GKK+rnSThT20dJWjCk5xq2g2HH8STva2jBE14kgte/AMnmCcJW0+v6Z2+gBhcwhVBTnjiV8eSjUoB++tvxdUaNVMcVF2prWuCHCeSXO7oouul5xIUCW1AycxeVuJwgKuCnJLkq61Sa+pJ8VO591CQGAmRXm1QsV1b1wU54fw6RF5vEJotyX3zudzHUEps19YTQU5kvNNS0pRbob6BEDZq65kg50uS0nLvMWsrmqangpz5JHcuvC0t9wkszeIVtd1qzHNBzlzJXfW30RbJwTEElimq8Akuydm+bA/+ZGc+LtFiNeBLgibbrj/CmjvTcJHFVgO+Jbg504e23EVM55oQWqAj/NM4XCBtNeBLglxucyb14f3UuWbM3m2AU6hB+6xmPBecK2fiWJIiGV6np6zGPK3ofHImXBIRVtcfxQ8XBDQLHT3q73q/yLxnCVrJmRTON0MfrYUQLDVlQl8pKsfxRFBUjkNnFEwcW2ElmdaK2vKa37QE2YA8JHBdUEbOZD7JUh0pOmrWah2165GFDVwVtCNnYkrSfJglRPNmHVlqaTjAtZ1M2/NLtuVMuOTkqR9GauP3uuwmNhdXEuRy/94/ACewa76sTmhHw8l7HW7JcRwLOpaj7E9UQpMFI7qycWAoDZdxVNHWl9ccJkfTuqF2NV69mYVH2BZsnnyM/x4chB14HY2Q0eVFYnOxJcjl9g73IKpNSq0r1TFEj3w7eCsBn5AWtCvHjmn9mqH2eFnHckgJLp15Li3nZx3LISy4dCaX3zP8/2JhuQrUsRyK6ODZ6MM/GmbHYoLjqSmjbn3T1RsXUWGEE6wvjh9hh832L0+REZ0YPZWqYzmkbgQaXduaIJR8/ksWq6MRosnvBoYOo8qQvpUrt3pVXCH0b7Y0xt+zs5C+grbw8PJ0WuoyJiAgIOCr4B1QTNaUWqU21gAAAABJRU5ErkJggg==" alt="Google play" />
+        <div class="footer-btn-text">
+          <p class="footer-btn-text-one">Play now on</p>
+          <p class="footer-btn-text-two">Google Play</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="footer-wrap-link">
+      <ul class="footer-nav-list">
+        <li class="footer-nav-item">
+          <a href="./cookies.html" class="footer-nav-link">Cookies Policy</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="./privacy-policy.html" class="footer-nav-link"
+            >Privacy Policy</a
+          >
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="./terms.html" class="footer-nav-link"
+            >Terms and Conditions</a
+          >
+        </li>
+      </ul>
+
+      <div class="footer-text-wrap">
+        <p class="footer-text">© 2025 fbxohikai.xyz, All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    
+    
+    
+    
+  </body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="500x500"
+      href="/assets/Icon500-124e1189.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,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"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    
+    
+    
+
+    <title>Terms and Conditions</title>
+    <script type="module" crossorigin src="/assets/modal-76898e35.js"></script>
+    <link rel="stylesheet" href="/assets/modal-a5059942.css">
+    <link rel="stylesheet" href="/assets/terms-5e9d412c.css">
+    <link rel="stylesheet" href="/assets/footer-9e0180b2.css">
+  </head>
+  <body class="terms-body">
+    <header class="header">
+      <div class="header-wrapper">
+        <nav class="nav">
+          <ul class="nav-list nav-list-dop">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/#about" class="nav-link">About the Game</a>
+            </li>
+            <li class="nav-item">
+              <a href="/#game" class="nav-link">Game Features</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/#how" class="nav-link">How to Play</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/#game-a" class="nav-link">Game Atmosphere</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/#reviews" class="nav-link">Reviews</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/#faq" class="nav-link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button type="button" class="header-burger" data-modal-open>
+          <img
+            width="24"
+            height="24"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVHgB7dbLCYAwEITh2WgRXoRc7MvOtC8vgher8JEGNqCEQPi/a5awC3MYCQAA4DPLDQzjNMssqob73s9jW72R3ntMy1uwRbWYpR3kHRHcDzrVl9khH6H4RuiyqBrCG6HdjxAA4BeqRFFUCVElAKBxVImiqBKiSgAAgKY9k385KOYmr7AAAAAASUVORK5CYII="
+            alt="Burger button"
+            class="header-burger-img cookies-burger"
+          />
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="terms">
+        <article class="terms-wrapper">
+          <section class="terms-section">
+            <h1 class="terms-title">Terms and Conditions</h1>
+
+            <div class="terms-dop-wrap">
+              <p class="terms-text">Last Updated: 2025-04-25</p>
+              <p class="terms-text paragraph">
+                These Terms and Conditions apply to the fbxohikai.xyz website
+                (hereinafter referred to as "Website"). By accessing or using
+                our services, you agree to comply with and be bound by these
+                Terms and Conditions. Please review them carefully before using
+                our Website.
+              </p>
+
+              <h5 class="terms-text-title">Acceptance of Terms</h5>
+              <p class="terms-text paragraph">
+                By accessing or using our Website, you acknowledge that you have
+                read, understood, and agree to be bound by these Terms and
+                Conditions. If you do not agree, please do not use the Website.
+              </p>
+
+              <h5 class="terms-text-title">Intellectual Property</h5>
+              <p class="terms-text">
+                All content, including text, images, graphics, and trademarks,
+                belongs to this website or its licensors and is protected by
+                applicable copyright and trademark laws. Unauthorized
+                reproduction, modification, or distribution is prohibited.
+              </p>
+              <p class="terms-text paragraph">
+                Any unauthorized commercial use, resale, or redistribution of
+                the Website’s content, including but not limited to its design,
+                layout, or code, is strictly prohibited.
+              </p>
+
+              <h5 class="terms-text-title">User Obligations</h5>
+              <ul class="terms-wrap-list">
+                <li class="terms-list">
+                  You agree not to use the Website for any unlawful purposes.
+                </li>
+                <li class="terms-list">
+                  You must not attempt to interfere with the proper working of
+                  the Website.
+                </li>
+                <li class="terms-list">
+                  Any attempt to reverse-engineer, decompile, or extract the
+                  source code is strictly prohibited.
+                </li>
+              </ul>
+              <p class="terms-text paragraph">
+                You may not use automated systems, bots, or scripts to access or
+                interact with the Website in any way that violates Google’s
+                policies on spam and automated queries.
+              </p>
+
+              <h5 class="terms-text-title">
+                Third-Party Services and External Links
+              </h5>
+              <p class="terms-text">
+                Please note that the Application utilizes third-party services
+                that have their own Terms and Conditions. Below are the links to
+                the Terms and Conditions of the third-party service providers
+                used by the Application:
+              </p>
+              <ul class="terms-wrap-list">
+                <li class="terms-list">
+                  <a
+                    class="terms-link-two"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://policies.google.com/terms"
+                    >Google Play Services</a
+                  >
+                </li>
+                <li class="terms-list">
+                  <a
+                    class="terms-link-two"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.google.com/analytics/terms/"
+                    >Google Analytics for Firebase</a
+                  >
+                </li>
+                <li class="terms-list">
+                  <a
+                    class="terms-link-two"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://mbasic.facebook.com/legal/terms/plain_text_terms/"
+                    >Facebook</a
+                  >
+                </li>
+              </ul>
+              <p class="terms-text paragraph">
+                By clicking on third-party links, you acknowledge that these
+                services operate under their own terms and policies. We are not
+                responsible for any data collection, practices, or content on
+                these external sites.
+              </p>
+
+              <h5 class="terms-text-title">Limitation of Liability</h5>
+              <p class="terms-text">
+                We are not responsible for any direct, indirect, incidental, or
+                consequential damages arising from the use of our Website.
+              </p>
+              <p class="terms-text paragraph">
+                We do not guarantee uninterrupted or error-free operation of the
+                Website. We are not liable for any loss of data, business
+                interruptions, or security breaches that may occur.
+              </p>
+
+              <h5 class="terms-text-title">Privacy and Data Usage</h5>
+              <p class="terms-text">
+                The Website may collect and process personal data as described
+                in our Privacy Policy.
+              </p>
+              <p class="terms-text paragraph">
+                We do not sell or rent your personal data to third parties. We
+                only share data with partners for analytics, security, and
+                functionality improvements.
+              </p>
+
+              <h5 class="terms-text-title">Changes to Terms</h5>
+              <p class="terms-text">
+                We reserve the right to modify these Terms at any time.
+                Continued use of the Website after changes signifies acceptance
+                of the updated Terms.
+              </p>
+              <p class="terms-text paragraph">
+                Users will be notified of material changes to these terms via an
+                update on the Website or through email (if provided).
+              </p>
+
+              <h5 class="terms-text-title">Contact Us</h5>
+              <p class="terms-text">
+                If you have any questions or suggestions about the Terms and
+                Conditions, please do not hesitate to contact us at
+                <a class="terms-mail" href="mailto:info@topblissstar.com"
+                  >info@fbxohikai.xyz.</a
+                >
+              </p>
+            </div>
+          </section>
+        </article>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="footer-wrap-content">
+          <h4 class="footer-wrap-content-title">
+            Time Your Moves, Follow the Beat!
+          </h4>
+          <p class="footer-wrap-content-text">
+            Join the Rhythm Rush in Rolling Sky Ball Now!
+          </p>
+          <a href="#" class="footer-btn">
+            <img
+              class="footer-btn-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP+SURBVHgB7ZpLaFNZHMa/k3ub2NQ6UpSZDsXGAWc3UGfqbqCtOs7IbOoDBnEx6WIWM5vaARfiK1mIulIXrptufKBIBcVXK1moCJZaVHyAkCBirNYaaZvW5t57PCd4RWvqPee+EuT+ICSB/7nkl+/jPpILBAQEBAQEzAuBJKtObOqmQCd72c4eefa6X6d6cmRLfxZViJRg68mNh0DJtvJboomhv84kUWUIC/58fGM8REivxcayOqXJ4S1nUqgSQqKDirGo22qG1TXGv4RfTmzqbTneGUMVICxY9zTRQopLhGZZknGVKBlW6b2oMMIVXb1vkhrqGKa+3w9aMya6rOK1lRLkz3YkOWxxqhJ7W+GKfligLUHdsx0QratJpWorLVhaxCSjo90gRhTSUJJgx9IM3yvDB6Qr+jF65AkKvK6hAuzgR21tJWiivF2GKK+rnSThT20dJWjCk5xq2g2HH8STva2jBE14kgte/AMnmCcJW0+v6Z2+gBhcwhVBTnjiV8eSjUoB++tvxdUaNVMcVF2prWuCHCeSXO7oouul5xIUCW1AycxeVuJwgKuCnJLkq61Sa+pJ8VO591CQGAmRXm1QsV1b1wU54fw6RF5vEJotyX3zudzHUEps19YTQU5kvNNS0pRbob6BEDZq65kg50uS0nLvMWsrmqangpz5JHcuvC0t9wkszeIVtd1qzHNBzlzJXfW30RbJwTEElimq8Akuydm+bA/+ZGc+LtFiNeBLgibbrj/CmjvTcJHFVgO+Jbg504e23EVM55oQWqAj/NM4XCBtNeBLglxucyb14f3UuWbM3m2AU6hB+6xmPBecK2fiWJIiGV6np6zGPK3ofHImXBIRVtcfxQ8XBDQLHT3q73q/yLxnCVrJmRTON0MfrYUQLDVlQl8pKsfxRFBUjkNnFEwcW2ElmdaK2vKa37QE2YA8JHBdUEbOZD7JUh0pOmrWah2165GFDVwVtCNnYkrSfJglRPNmHVlqaTjAtZ1M2/NLtuVMuOTkqR9GauP3uuwmNhdXEuRy/94/ACewa76sTmhHw8l7HW7JcRwLOpaj7E9UQpMFI7qycWAoDZdxVNHWl9ccJkfTuqF2NV69mYVH2BZsnnyM/x4chB14HY2Q0eVFYnOxJcjl9g73IKpNSq0r1TFEj3w7eCsBn5AWtCvHjmn9mqH2eFnHckgJLp15Li3nZx3LISy4dCaX3zP8/2JhuQrUsRyK6ODZ6MM/GmbHYoLjqSmjbn3T1RsXUWGEE6wvjh9hh832L0+REZ0YPZWqYzmkbgQaXduaIJR8/ksWq6MRosnvBoYOo8qQvpUrt3pVXCH0b7Y0xt+zs5C+grbw8PJ0WuoyJiAgIOCr4B1QTNaUWqU21gAAAABJRU5ErkJggg=="
+              alt="Google play"
+            />
+            <div class="footer-btn-text">
+              <p class="footer-btn-text-one">Play now on</p>
+              <p class="footer-btn-text-two">Google Play</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="footer-wrap-link">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="cookies.html" class="footer-nav-link">Cookies Policy</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="privacy-policy.html" class="footer-nav-link"
+                >Privacy Policy</a
+              >
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="terms.html" class="footer-nav-link"
+                >Terms and Conditions</a
+              >
+            </li>
+          </ul>
+
+          <div class="footer-text-wrap">
+            <p class="footer-text">
+              © 2025 fbxohikai.xyz, All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal" class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <div class="modal-header">
+          <button type="button" class="back-button is-hidden" data-modal-close>
+            <img
+              width="24"
+              height="24"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVHgB7ZhRCoQwDAXDnrQ32d48i2AgdKNUm7QpvAF//IgzoK2UCAAAAACbwMzluCiI0PnncOFLzhwz1fxC3jQBrhGNfEzA+aDqHWHIV4rEM2K6vHrwcMQyeSXwOmK5vBJ5HJFGXgl1R6STF3oi0soLdxHp5QUrYht5wYjYR164iKgUwIdi4M57+TDeefPDTon1wXLAD2AId6tN+gjuWCrTRvCDdT5dBL/YpNJE8MAOuzxiRF7NWBPhIa9mzY3wlFcz50Tw/7FKJSeMiELeNAGVnGkiCkXAOx8tAgAAACCAHzTGoZIRzJ7yAAAAAElFTkSuQmCC"
+              alt="burger-button"
+              class="back-img"
+            />
+          </button>
+        </div>
+
+        <nav class="modal-nav is-hidden" data-modal>
+          <ul class="modal-nav-list">
+            <li class="modal-nav-item">
+              <a href="/" class="modal-nav-link">Home</a>
+            </li>
+
+            <li class="modal-nav-item">
+              <a href="/#about" class="modal-nav-link">About the Game</a>
+            </li>
+
+            <li class="modal-nav-item">
+              <a href="/#game" class="modal-nav-link">Game Features</a>
+            </li>
+
+            <li class="modal-nav-item">
+              <a href="/#how" class="modal-nav-link">How to Play</a>
+            </li>
+
+            <li class="modal-nav-item">
+              <a href="/#game-a" class="modal-nav-link">Game Atmosphere</a>
+            </li>
+
+            <li class="modal-nav-item">
+              <a href="/#reviews" class="modal-nav-link">Reviews</a>
+            </li>
+
+            <li class="modal-nav-item">
+              <a href="/#faq" class="modal-nav-link">FAQ</a>
+            </li>
+
+            <li class="modal-nav-item">
+              <a href="./cookies.html" class="modal-nav-link">Cookies Policy</a>
+            </li>
+
+            <li class="modal-nav-item">
+              <a href="./privacy-policy.html" class="modal-nav-link"
+                >Privacy Policy</a
+              >
+            </li>
+
+            <li class="modal-nav-item">
+              <a href="./terms.html" class="modal-nav-link"
+                >Terms and Conditions</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
